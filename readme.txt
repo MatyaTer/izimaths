@@ -1,0 +1,1 @@
+If at page header is smaller then nav - close your downloads bar at bottom of the browser.

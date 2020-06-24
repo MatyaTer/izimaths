@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>matts.izimaths.com</title>
+    <link rel="icon" href="img/icodoska.png">
+    <!-- Connection to graph lib -->
+    <script type="text/javascript" src="http://jsxgraph.org/distrib/jsxgraphcore.js"></script>
+    <script src="js/command.js"></script>
+    <script src="js/forFunc.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/proper.css">
+    <!-- Connect to graph css -->
+    <link rel="stylesheet" type="text/css" href="http://jsxgraph.org/distrib/jsxgraph.css" />
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Connection to social media -->
+            <a href="https://instagram.com"><br><img class="follow"
+                    src="https://freeiconshop.com/wp-content/uploads/edd/instagram-new-outline.png"></a>
+            <a href="https://facebook.com"><br><img class="follow"
+                    src="https://logoeps.com/wp-content/uploads/2014/01/23747-facebook-square-logo-icon-vector-icon-vector-eps.png"></a>
+        </header>
+        <nav>
+            <a href="homepage.html">
+                <div class="navigator_ue" id="Hom">Home</div>
+            </a>
+            <a href="aboutUs.html">
+                <div class="navigator_ue" id="About">About us</div>
+            </a>
+            <a href="projects.html">
+                <div class="navigator_ue" id="Pro">Projects</div>
+            </a>
+            <a href="contact.html">
+                <div class="navigator_ue" id="Contact">Contact us</div>
+            </a>
+        </nav>
+        <div id="centerman">
+            <h1>
+                Table of parabola:<br><br>
+                <table style="border: 2px solid grey; font-size: 30px; border-collapse: collapse;" id="funcTab">
+                    <tr>
+                        <th>Property</th>
+                        <th>Data</th>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Function:</td>
+                        <td class="uslovie" id="funcIns"><select id="vybor">
+                                <option>Type of function:</option>
+                                <option>ax^2+bx+c</option>
+                                <option>a(x-x1)(x-x2)</option>
+                                <option>a(x-p)^2+k</option>
+                            </select><button onclick="tipFunc()">Choose</button><br><span id="dataIn"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Axis of symmetry:</td>
+                        <td class="uslovie" id="sym"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Intersection with y axis:</td>
+                        <td class="uslovie" id="Khituh"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Zero point:</td>
+                        <td class="uslovie" id="zerro"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Directrix:</td>
+                        <td class="uslovie" id="direc3x"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Directrix type:</td>
+                        <td class="uslovie" id="dirType"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Function increase:</td>
+                        <td class="uslovie" id="vverkh"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Function decrease:</td>
+                        <td class="uslovie" id="vniz"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Function is positive when:</td>
+                        <td class="uslovie" id="pluss"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Function is negative when:</td>
+                        <td class="uslovie" id="minuss"></td>
+                    </tr>
+                    <tr>
+                        <td class="parametr">Drawing:</td>
+                        <td class="uslovie" id="Skiza">
+                            <div id="box" class="jxgbox" style="width:30vmin; height:30vmin;"></div>
+                        </td>
+                    </tr>
+                </table><br>
+                <button style="font-size: 4vmin;" onclick="letsCount()">Start</button><br>
+            </h1>
+        </div>
+        <footer id="foot">
+            <h1>Izimaths</h1>
+            <h2>We care about your grades.</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
